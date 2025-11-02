@@ -29,7 +29,7 @@
   ### Links
 
   - Solution URL: [GitHub Repository](https://github.com/AsmaaG87/time-tracking-dashboard)
-  - Live Site URL: [Add live site URL here](https://asmaag87.github.io/time-tracking-dashboard/)
+  - Live Site URL: [Live Site](https://asmaag87.github.io/time-tracking-dashboard/)
 
   ## My process
 
