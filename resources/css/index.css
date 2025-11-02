@@ -1,0 +1,662 @@
+
+  /* Universal Style */
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        margin : 0;
+        padding: 0;
+        font-family: "Rubik", sans-serif;
+        background-color: #1C204B;
+    }
+
+  /* Mobile Design  */
+    main {
+        width: 375px;
+        margin: 0 auto;
+    }
+
+    .container {
+        max-width: 327px;
+        margin: 2em auto;
+        display : grid;
+        gap: 1.5em;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "personal-info"
+            "work"
+            "play"
+            "study"
+            "exercise"
+            "social"
+            "self-care";
+        place-items: center;
+        padding: 0;
+    }
+    /* Personal-info-card */
+    .personal-info {
+        grid-area: personal-info;
+        background-color: #1C204B;
+        border-radius: 15px;
+        width: 100%;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    }
+    .personal-info:hover,
+    .personal-info:focus {
+        background-color: #33397A;
+        cursor: pointer;  
+    }
+    .personal-info-container {
+        background-color: #5747EA;
+        display: flex;
+        gap: 1.5em;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        padding: 1.5em;
+       
+    }
+    .personal-data {
+        display: flex;
+        gap: 1em;
+        align-items: center;
+    }
+    .personal-data img {
+        border: 3px solid #ffffff;
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
+    }
+    .personal-data-content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .personal-data-content span {
+        font-size: 0.9375rem;
+        color: #BBC0FF;
+        line-height: 1.2;
+        text-align: left;
+    }
+    .personal-data-content h1 {
+        margin: 0;
+        font-size: 1.5rem;
+        line-height: 1.16;
+        color:#ffffff;
+        text-align: left;
+        font-weight: 300;
+    }
+    .btn-sec {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        padding: 0.5em 0;
+    }
+    .btn-sec a {
+        text-decoration: none;
+        color: #BBC0FF;
+        font-size: 0.9375rem;
+        line-height: 1.2;
+        padding: 0.5em;
+    }
+     .btn-sec li.active a,
+     .btn-sec a:hover,
+     .btn-sec a:focus {
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    /* Activity-cards */
+    /* Work-section */
+    .work-sec{
+        grid-area: work;
+        background-color: #FF8B64;
+        border-radius: 15px;
+        width: 100%;
+        background-image: url("../images/icon-work.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 60px;
+        padding-top: 2em;
+    } 
+    .work-sec-info {  
+        border-radius: 13px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        padding: 1.5em;
+    }
+    .work-sec-info:hover,
+    .play-sec-info:hover,
+    .study-sec-info:hover,
+    .exercise-sec-info:hover,
+    .social-sec-info:hover,
+    .self-care-sec-info:hover,
+    .work-sec-info:focus,
+    .play-sec-info:focus,
+    .study-sec-info:focus,
+    .exercise-sec-info:focus,
+    .social-sec-info:focus,
+    .self-care-sec-info:focus {
+        background-color: #33397A;
+        cursor: pointer;  
+    }
+    .work-activity-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 279px;
+        position: relative;
+    }
+    .work-activity-title h2 {
+        margin: 0;
+        font-size: 1.125rem;
+        color: #FFFFFF;
+        line-height: 1.3;
+        text-align: left;
+        font-weight: 400;
+    }
+    .work-activity-title img {
+        width: 20px;
+        height: 5px;
+        cursor: pointer;
+    }
+    .menu-list {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        flex-direction: column;
+        gap: 0.5em;
+        position: absolute;
+        background-color: #1C204B;
+        padding: 1em;
+        border-radius: 10px;
+        top: auto;
+        bottom: auto;
+        right: auto;
+        left: 150px; 
+        z-index: 10;  
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    }
+    .menu-list a {
+        text-decoration: none;
+        color: #BBC0FF;
+        font-size: 0.875rem;
+        line-height: 1.2;
+    }
+    .menu-list a:hover {
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    .work-activity-stats {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 279px;
+    }
+    .work-activity-stats h3 {
+        margin: 0;
+        font-size: 2rem;
+        color: #FFFFFF;
+        line-height: 1.18;
+        text-align: left;
+        font-weight: 300;
+    }
+    .work-activity-stats p {
+        margin: 0;
+        font-size: 0.9375rem;
+        color: #BBC0FF;
+        line-height: 1.2;
+        text-align: right;
+    }
+    
+     /* Play card */
+
+    .play-sec {
+        grid-area: play;
+        background-color: #55C2E6;
+        border-radius: 15px;
+        width: 100%;
+        background-image: url("../images/icon-play.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 60px;
+        padding-top: 2em;
+    }
+    .play-sec-info { 
+        border-radius: 13px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        padding: 1.5em;
+    }
+    .play-activity-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 279px;
+        position: relative;
+    }
+    .play-activity-title h2 {
+        margin: 0;
+        font-size: 1.125rem;
+        color: #FFFFFF;
+        line-height: 1.3;
+        text-align: left;
+        font-weight: 400;
+    }
+    .play-activity-title img {
+        width: 20px;
+        height: 5px;
+        cursor: pointer;
+    }
+    .play-activity-stats {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 279px;
+    }
+    .play-activity-stats h3 {
+        margin: 0;
+        font-size: 2rem;
+        color: #FFFFFF;
+        line-height: 1.18;
+        text-align: left;
+        font-weight: 300;
+    }
+    .play-activity-stats p {
+        margin: 0;
+        font-size: 0.9375rem;
+        color: #BBC0FF;
+        line-height: 1.2;
+        text-align: right;
+    }
+        /* Study card */
+    .study-sec {
+        grid-area: study;
+        background-color: #FF5E7D;
+        border-radius: 15px;
+        width: 100%;
+        background-image: url("../images/icon-study.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 60px;
+        padding-top: 2em;
+    }
+    .study-sec-info {  
+        border-radius: 13px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        padding: 1.5em;
+    }
+    .study-activity-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 279px;
+        position: relative;
+    }
+    .study-activity-title h2 {
+        margin: 0;
+        font-size: 1.125rem;
+        color: #FFFFFF;
+        line-height: 1.3;
+        text-align: left;
+        font-weight: 400;
+    }
+    .study-activity-title img {
+        width: 20px;
+        height: 5px;
+        cursor: pointer;
+    }
+    .study-activity-stats {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 279px;
+    }
+    .study-activity-stats h3 {
+        margin: 0;
+        font-size: 2rem;
+        color: #FFFFFF;
+        line-height: 1.18;
+        text-align: left;
+        font-weight: 300;
+    }
+    .study-activity-stats p {
+        margin: 0;
+        font-size: 0.9375rem;
+        color: #BBC0FF;
+        line-height: 1.2;
+        text-align: right;
+    }
+
+     /* Exercise card */
+    .exercise-sec {
+        grid-area: exercise;
+        background-color: #4BCF82;
+        border-radius: 15px;
+        width: 100%;
+        background-image: url("../images/icon-exercise.svg");
+        background-repeat: no-repeat;   
+        background-position: top right;
+        background-size: 60px;
+        padding-top: 2em;
+    }
+    .exercise-sec-info {  
+        border-radius: 13px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        padding: 1.5em;
+    }
+    .exercise-activity-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 279px;
+        position: relative;
+    }
+    .exercise-activity-title h2 {
+        margin: 0;
+        font-size: 1.125rem;
+        color: #FFFFFF;
+        line-height: 1.3;
+        text-align: left;
+        font-weight: 400;
+    }
+    .exercise-activity-title img {
+        width: 20px;
+        height: 5px;
+        cursor: pointer;
+    }
+    .exercise-activity-stats {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 279px;
+    }
+    .exercise-activity-stats h3 {
+        margin: 0;
+        font-size: 2rem;
+        color: #FFFFFF;
+        line-height: 1.18;
+        text-align: left;
+        font-weight: 300;
+    }
+    .exercise-activity-stats p {
+        margin: 0;
+        font-size: 0.9375rem;
+        color: #BBC0FF;
+        line-height: 1.2;
+        text-align: right;
+    }
+
+     /* Social card */
+    .social-sec {
+        grid-area: social;
+        background-color: #7335D2;
+        border-radius: 15px;
+        width: 100%;
+        background-image: url("../images/icon-social.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 60px;
+        padding-top: 2em;
+    }
+    .social-sec-info {   
+        border-radius: 13px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        padding: 1.5em;
+    }
+    .social-activity-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 279px;
+        position: relative;
+    }
+    .social-activity-title h2 {
+        margin: 0;
+        font-size: 1.125rem;
+        color: #FFFFFF;
+        line-height: 1.3;
+        text-align: left;
+        font-weight: 400;
+    }
+    .social-activity-title img {
+        width: 20px;
+        height: 5px;
+        cursor: pointer;
+    }
+    .social-activity-stats {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 279px;
+    }
+    .social-activity-stats h3 {
+        margin: 0;
+        font-size: 2rem;
+        color: #FFFFFF;
+        line-height: 1.18;
+        text-align: left;
+        font-weight: 300;
+    }
+    .social-activity-stats p {
+        margin: 0;
+        font-size: 0.9375rem;
+        color: #BBC0FF;
+        line-height: 1.2;
+        text-align: right;
+    }
+
+     /* Self-care card */
+    .self-care-sec {
+        grid-area: self-care;
+        background-color: #F1C75B;
+        border-radius: 15px;
+        width: 100%;
+        background-image: url("../images/icon-self-care.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 60px;
+        padding-top: 2em;
+    }
+    .self-care-sec-info {  
+        border-radius: 13px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        padding: 1.5em;
+    }
+    .self-care-activity-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 279px;
+        position: relative;
+    }
+    .self-care-activity-title h2 {
+        margin: 0;
+        font-size: 1.125rem;
+        color: #FFFFFF;
+        line-height: 1.3;
+        text-align: left;
+        font-weight: 400;
+    }
+    .self-care-activity-title img {
+        width: 20px;
+        height: 5px;
+        cursor: pointer;
+    }
+    .self-care-activity-stats {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 279px;
+    }
+    .self-care-activity-stats h3 {
+        margin: 0;
+        font-size: 2rem;
+        color: #FFFFFF;
+        line-height: 1.18;
+        text-align: left;
+        font-weight: 300;
+    }
+    .self-care-activity-stats p {
+        margin: 0;
+        font-size: 0.9375rem;
+        color: #BBC0FF;
+        line-height: 1.2;
+        text-align: right;
+    }
+    .work-sec-info,
+    .play-sec-info,
+    .study-sec-info,
+    .exercise-sec-info,
+    .social-sec-info,
+    .self-care-sec-info {
+        background-color: #1C204B;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .dropdown-menu {
+        display: none;
+    }
+       /* Footer */
+    footer {
+        text-align: center;
+        padding: 1em 0;
+    }
+     footer small {
+        color: #FFFFFF;
+        font-size: 0.875rem;
+     }
+     small a {
+        text-decoration: none;
+        color: #BBC0FF;
+     }
+     small a:hover,
+     small a:focus {
+        color: #FFFFFF;
+        cursor: pointer;
+        text-decoration: underline;
+        }
+
+    /* Media Query */
+    @media only screen and (min-width: 768px){
+        main {
+            width: 768px;
+        }
+        .container {
+            max-width: 680px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: 
+                "personal-info personal-info personal-info"
+                "work play study"
+                "exercise social self-care";
+            gap: 1.5em;
+            margin: 3em auto;
+        }
+        .personal-info-container {
+            justify-content: flex-start;  
+        }
+       .btn-sec {
+           justify-content: center;
+           justify-items: center;
+           gap: 2em;   
+       }
+        .menu-list {
+            left: auto;
+            right: 0;
+            top: 25px; 
+        }
+        .work-activity-stats {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5em;
+        }
+        .play-activity-stats {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5em;
+        }
+        .study-activity-stats {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5em;
+        }
+        .exercise-activity-stats {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5em;
+        }
+        .social-activity-stats {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5em;
+        }
+        .self-care-activity-stats {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5em;
+        }
+
+        
+    }
+    @media only screen and (min-width: 1440px){
+        main {
+            width: 1440px;
+        }
+        .container {
+            max-width: 1116px;
+            gap: 2em;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+            "personal-info work play study"
+            "personal-info exercise social self-care";
+            margin: 4em auto;
+        }
+        .personal-info {
+            height: 100%;
+        }
+        .personal-info-container {
+            flex-direction: column;
+            align-items: flex-start;
+            height: 65%;
+        }
+        .btn-sec {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1em;   
+        }
+           
+        
+    
+}
+     
+
+
+
+    
+
+
+
+
+
+
+
+
+  

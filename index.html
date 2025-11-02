@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A time tracking dashboard app to monitor your daily, weekly, and monthly activities.">
+    <meta name="keywords" content="time tracking, dashboard, frontend mentor, responsive design, web development
+    , CSS, JavaScript, HTML, web app, user interface, user experience, frontend developer">
+    <meta name="author" content="Asmaa GAD">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" 
+    rel="stylesheet">
+    <link rel="canonical" href="https://yourusername.github.io/time-tracking-dashboard/">
+    <link rel="icon" type="image/png" href="resources/images/favicon-32x32.png" sizes="32x32">
+    <link rel="stylesheet" href="resources/css/index.css"> 
+    <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <section class="personal-info">
+                <div class="personal-info-container">
+                    <div class="personal-data">
+                        <img src="resources/images/image-jeremy.png"
+                        width="64"
+                        height="64"
+                        alt="Jeremy personal image">
+                        <div class="personal-data-content">
+                            <span>Report for</span>
+                            <h1>Jeremy Robson</h1>
+                        </div>
+                    </div>
+                </div>
+                <ul class="btn-sec">
+                 <li id="daily-btn"><a href="#">Daily</a></li>
+                 <li id="weekly-btn"><a href="#">Weekly</a></li>
+                 <li id="monthly-btn"><a href="#">Monthly</a></li>
+                </ul>
+            </section>
+            <section class="work-sec">
+                <div class="work-sec-info">
+                    <div class="work-activity-title">
+                        <h2>Work</h2>
+                      <a href="#"><img src="resources/images/icon-ellipsis.svg"
+                        width="21"
+                        height="5"
+                        alt="icon-ellipsis"
+                        class="menu-btn"></a>
+                        <div class="dropdown-menu menu-list">
+                            <a href="#">Delete</a>
+                            <a href="#">Set Goal</a>
+                            <a href="#">View History</a>
+                        </div>
+                    </div>
+                    <div class="work-activity-stats">
+                        <h3 class="current-hours">32hrs</h3>
+                        <p class="previous-hours">Last week-36hrs</p>
+                    </div>
+                </div>
+            </section>
+            <section class="play-sec">
+                <div class="play-sec-info">
+                    <div class="play-activity-title">
+                        <h2>Play</h2>
+                     <a href="#"><img src="resources/images/icon-ellipsis.svg"
+                        width="21"
+                        height="5"
+                        alt="icon-ellipsis"
+                        class="menu-btn"></a>
+                        <div class="dropdown-menu menu-list">
+                            <a href="#">Delete</a>
+                            <a href="#">Set Goal</a>
+                            <a href="#">View History</a>
+                        </div>
+                    </div>
+                    <div class="play-activity-stats">
+                       <h3 class="current-hours">10hrs</h3>
+                       <p class="previous-hours">Last week-36hrs</p>
+                    </div>
+                </div>
+            </section>
+            <section class="study-sec">
+                <div class="study-sec-info">
+                    <div class="study-activity-title">
+                        <h2>Study</h2>
+                        <a href="#"><img src="resources/images/icon-ellipsis.svg"
+                        width="21"
+                        height="5"
+                        alt="icon-ellipsis"
+                        class="menu-btn"></a>
+                        <div class="dropdown-menu menu-list">
+                            <a href="#">Delete</a>
+                            <a href="#">Set Goal</a>
+                            <a href="#">View History</a>
+                        </div>
+                    </div>
+                    <div class="study-activity-stats">
+                        <h3 class="current-hours">4hrs</h3>
+                        <p class="previous-hours">Last week-7hrs</p>
+                    </div>
+                </div>
+            </section>
+            <section class="exercise-sec">
+                <div class="exercise-sec-info">
+                    <div class="exercise-activity-title">
+                        <h2>Exercise</h2>
+                        <a href="#"><img src="resources/images/icon-ellipsis.svg"
+                        width="21"
+                        height="5"
+                        alt="icon-ellipsis"
+                        class="menu-btn"></a>
+                        <div class="dropdown-menu menu-list">
+                            <a href="#">Delete</a>
+                            <a href="#">Set Goal</a>
+                            <a href="#">View History</a>
+                        </div>
+                    </div>
+                    <div class="exercise-activity-stats">
+                        <h3 class="current-hours">4hrs</h3>
+                        <p class="previous-hours">Last week-5hrs</p>
+                    </div>
+                </div>
+            </section>
+            <section class="social-sec">
+                <div class="social-sec-info">
+                    <div class="social-activity-title">
+                        <h2>Social</h2>
+                    <a href="#"><img src="resources/images/icon-ellipsis.svg"
+                        width="21"
+                        height="5"
+                        alt="icon-ellipsis"
+                        class="menu-btn"></a>
+                        <div class="dropdown-menu menu-list">
+                            <a href="#">Delete</a>
+                            <a href="#">Set Goal</a>
+                            <a href="#">View History</a>
+                        </div>
+                    </div>
+                    <div class="social-activity-stats">
+                        <h3 class="current-hours">5hrs</h3>
+                        <p class="previous-hours">Last week-10hrs</p>
+                    </div>
+                </div>
+            </section>
+            <section class="self-care-sec">
+                <div class="self-care-sec-info">
+                    <div class="self-care-activity-title">
+                        <h2>Self-care</h2>
+                     <a href="#"><img src="resources/images/icon-ellipsis.svg"
+                        width="21"
+                        height="5"
+                        alt="icon-ellipsis"
+                        class="menu-btn"></a>
+                        <div class="dropdown-menu menu-list">
+                            <a href="#">Delete</a>
+                            <a href="#">Set Goal</a>
+                            <a href="#">View History</a>
+                        </div>
+                    </div>
+                    <div class="self-care-activity-stats">
+                        <h3 class="current-hours">2hrs</h3>
+                        <p class="previous-hours">Last week-2hrs</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <small>
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" 
+            target="_blank" rel="noopener">Frontend Mentor</a>. 
+            Coded by <a href="https://x.com/Asmaagadel" target="_blank" rel="noopener">Asmaa GAD</a>.
+        </small>
+    </footer>
+    <script src="resources/js/index.js" type="module"></script>
+</body>
+</html>
